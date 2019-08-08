@@ -18,6 +18,9 @@ nav{
 nav ul{
 	list-style: none; /*Removes bullet points from list*/
 }
+nav li{
+	text-align: center;
+}
 nav a{
 	text-decoration: none; /*Removes underline from links*/
 	color: blue;
@@ -40,26 +43,42 @@ nav a:hover{
 	background: cyan;
 	width: 70%;
 }
+.section{
+	height: 100%;
+}
 header{
 	width: 100%;
-	height: 150px;
+	height: 200px;
 	background: darkslategrey;
 	color: white;
 }
 main{
 	width: 100%;
-	height: 600px;
+	/*height: 745px;*/
 	background: firebrick;
 }
 section{
 	width: 55%;
 	height: 100%;
 	background: pink;
+	font-size: 16px;
 }
 aside{
 	width: 25%;
 	height: 100%;
 	background: lime;
+}
+footer{
+	background: red;
+	height: 125px;
+	padding: 2.4%;
+}
+main::after{
+	clear: both;
+}
+header::after{
+	clear: both;
+	display: table;
 }
 
 /*Text*/
@@ -71,4 +90,20 @@ h1{
 quote{
 	color: grey;
 	font-size: 1.2em;
+	margin-top: 50px;
 }
+
+
+/*images*/
+#logo{
+	width: 10%;
+	padding-left: 2%;
+}
+.asideImage{
+	width: 50%;
+	padding: 2%;
+}
+
+
+
+
